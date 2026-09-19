@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>:first-child伪类示例</title>
+		<style type="text/css">
+			/*把作为某元素的第一个子元素的所有p元素设置为粗体、紫色*/
+			p:first-child {font-weight: bold;color: purple;}
+			/*把作为某个元素（在HTML中肯定是ol或ul元素）第一个子元素的所有li元素变成大字体、黄色背景*/
+			li:first-child { font-size: large; background-color: yellow; }
+			/*把作为某个元素第一个元素的所有b、strong元素变成蓝色*/
+			b:first-child,strong:first-child {color: blue;}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>馨美装修产品系列</p>
+			<ul>
+				<li>温馨系列</li>
+				<li>田园<strong>系</strong><strong>列</strong> </li>
+				<li>城市<strong>系</strong>列</li>
+			</ul>
+			<p><b>温馨系列、田园系列、城市系列</b>是馨美装修的<b>三大</b>系列产品，不同文化背景的国家在<b>装修</b>选择方面有着各具特色的偏好。</p>
+		</div>
+	</body>
+</html>
+

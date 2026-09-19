@@ -1,0 +1,8 @@
+div{width:500px; border:1px dashed #00f;}
+h3{font-size:30pt;color:purple; text-align:center}   
+p{font-size:11pt; color:black} 
+p.author{color:blue;text-align:right}
+p.img{text-align:center}
+p.content{color:blue}
+p.note{color:green;text-align:left}
+.bgcolor{background:blue}   /* 定义类，背景为蓝色*/

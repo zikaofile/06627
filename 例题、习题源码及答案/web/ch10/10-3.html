@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    <title>绘制路径</title>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="470" height="200" style="border:1px solid #c3c3c3;">
+    您的浏览器不支持canvas元素.
+    </canvas>
+    <script type="text/javascript">
+      var c=document.getElementById("myCanvas");
+      var cxt=c.getContext("2d");
+		cxt.beginPath();
+		//设定起始点
+		cxt.moveTo(30,30);
+		//从(30,30)到(80,80)绘制直线
+		cxt.lineTo(80,80);
+		//从(80,80)到(60,150)绘制直线
+		cxt.lineTo(60,150);
+		//关闭路径
+		cxt.closePath();
+		//设定绘制样式
+		cxt.fillStyle="lightgrey";
+		//进行填充
+		cxt.fill();
+		
+		//开始创建路径
+		cxt.beginPath();
+		//设定起始点
+		cxt.moveTo(100,30);
+		//绘制折线
+		cxt.lineTo(150,80);
+		cxt.lineTo(200,60);
+		cxt.lineTo(150,150);
+		cxt.lineWidth=4;
+		cxt.strokeStyle="black";
+		//沿着当前路径绘制或画一条直线
+		cxt.stroke();
+		//进行填充
+		cxt.fill();
+		
+		//开始创建路径
+		cxt.beginPath();
+		//设定起始点
+		cxt.moveTo(230,30);
+		//绘制折线
+		cxt.lineTo(300,150);
+		cxt.lineTo(350,60);
+		cxt.closePath();
+		//沿着当前路径绘制或画一条直线
+		cxt.stroke();
+		//绘制矩形路径
+		cxt.beginPath();
+		cxt.rect(400,30,50,120);
+		cxt.stroke();
+		cxt.fill();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用文本框输入</title>
+		<script language="JavaScript">
+			function test(str) {
+				alert("您输入的内容是：" + str);
+			}
+		</script>
+	</head>
+	<body>
+		<form name="chform" method="post">
+			<p>请输入：
+				<input type="text" name="textname" onBlur="test(this.value)" />
+			</p>
+		</form>
+	</body>
+</html>

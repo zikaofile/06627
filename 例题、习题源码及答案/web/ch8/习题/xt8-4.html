@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>输出20以内的素数</title>
+	</head>
+	<body>
+		<script language="JavaScript">
+			for (m = 3; m <= 20; m += 2) {
+				for (i = 2; i <= m - 1; i++) {
+					if (m % i == 0) //m能被i整除
+						break; //跳出当前循环
+				}
+				if (i > m - 1) //如果i的值大于m-1，证明上面的循环全部执行，没有中间跳出
+					document.write(m + "&nbsp;&nbsp;");
+			}
+		</script>
+	</body>
+</html>

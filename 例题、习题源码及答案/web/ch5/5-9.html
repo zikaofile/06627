@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>设置列表项图像</title>
+		<style>
+			body {
+				background-color: ivory;
+			}
+			ul {
+				font-size: 1.5em;
+				color: blue;
+				list-style-image: url(images/smilingface.gif);
+				/*设置列表项图像*/
+			}
+			.img_fault {
+				list-style-image: url(images/fault.gif);
+				/*设置列表项图像错误的URL，图像不能正确显示*/
+			}
+			.img_none {
+				list-style-image: none;
+				/*设置列表项图像为不显示，所以没有图像显示*/
+			}
+		</style>
+	</head>
+	<body>
+		<h2>装修风格</h2>
+		<ul>
+			<li>国风风格</li>
+			<li class="img_fault">简约风格</li>
+			<li>欧式风格</li>
+			<li class="img_none">田园风格</li>
+		</ul>
+	</body>
+</html>

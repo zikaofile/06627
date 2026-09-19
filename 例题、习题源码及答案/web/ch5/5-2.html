@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>设置文本样式综合案例</title>
+		<style type="text/css">
+			h1 {
+				font-family: 黑体;	/*设置字体类型*/
+				text-align: center;  /*文本居中对齐*/
+			}
+			p {
+				font-family: Arial, "Times New Roman";
+				font-size: 12pt;
+				/*设置字体大小*/
+				text-indent: 2em;/*段落首行缩进2个父元素的宽度*/ 
+			}
+			.one {
+				font-weight: bold;
+				/*设置字体为粗体*/
+				font-size: 30px;
+				text-decoration: overline;  /*设置上划线*/
+			}
+			.two {
+				font-weight: 400;
+				/*设置字体为400粗细*/
+				font-size: 36px;
+				color: green;
+				text-shadow: 5px 5px 3px, 10px 10px 5px gray;
+			}
+			.three {
+				font-weight: 900;
+				/*设置字体为900粗细*/
+				font-size: 24px;
+			}
+			p.bottom {
+				font-style: italic;
+				/*设置斜体*/
+				text-decoration: underline;  /*设置下划线*/
+				width: 380px;
+				/*设置裁切的宽度*/
+				height: 30px;
+				/*设置裁切的高度*/
+				overflow: hidden;
+				/*溢出隐藏*/
+				white-space: nowrap;
+				/*强制文本在一行内显示*/
+				text-overflow: ellipsis;
+				/*当文本溢出时显示省略标记（…）*/
+			}
+		</style>
+	</head>
+	<body>
+		<h1>馨美装修有限公司</h1>
+		<p>馨美装修公司是一家集<span class="one">装饰设计、施工、家具、软装</span>等为一体的整体家居企业。历经短短<span class="two">5年</span>时间的发展，品牌已覆盖成都、济南、大连、广州、苏 州等全国25个<span class="three">一线核心城市</span>。</p>
+		<p class="bottom">人民对美好生活的向往，就是我们的奋斗目标。在这里，创业的氛围让每个人都积极创新，为做出美好的事情而努力。</p>
+	</body>
+</html>

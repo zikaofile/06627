@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>兄弟选择符示例</title>
+		<style type="text/css">
+			div ~ p {background-color:#c9a;}	/*E元素为div，F元素为p*/
+		</style>
+	</head>
+	<body>
+		<div style="width:233px">
+			<div>
+			  <p>匹配E元素后的F元素</p>	<!-- E元素中的F元素，不匹配-->
+			  <p>匹配E元素后的F元素</p>	<!-- E元素中的F元素，不匹配-->
+			</div>
+			<hr />
+			<p>匹配E元素后的F元素</p> <!-- E元素后的F元素，匹配-->
+			<p>匹配E元素后的F元素</p> <!-- E元素后的F元素，匹配-->
+			<hr />
+			<p>匹配E元素后的F元素</p> <!-- E元素后的F元素，匹配-->
+			<hr />
+			<div>匹配E元素后的F元素</div> <!-- E元素本身，不匹配-->
+			<hr />
+			<p>匹配E元素后的F元素</p> <!-- E元素后的F元素，匹配-->
+		</div>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>变量的作用域</title>
+	</head>
+	<body>
+		<script language="JavaScript">
+			var a = 20; // 定义全局变量
+			function setNumber() {
+				var a = 10; // 定义局部变量
+				document.write("局部变量:"+a); // 输出局部变量a
+			}
+			setNumber();
+			document.write("<br>");
+			document.write("全局变量:"+a); // 输出全局变量a
+		</script>
+	</body>
+</html>

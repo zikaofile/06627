@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>纵向列表导航菜单</title>
+<style type="text/css">
+#menu {
+	width:130px;
+	border:1px solid #cccccc;
+	padding:3px;
+	font-size:12px;
+}
+#menu * {
+	margin:0;
+	padding:0;
+}
+#menu li {
+	list-style:none; 			   /* 不显示项目符号*/
+	border-bottom:1px solid #ffce88;/*设置列表项之间的间隔线*/
+}
+#menu li a {
+	display:block;
+	background:#fbd346 url(images/menu_bg.jpg) repeat-y left;
+	color:#000;
+	text-decoration:none;/*取消超链接文字下划线效果*/
+	padding:5px 5px 10px 15px;/*设置内边距，目的是将a元素所在的容器扩展出一定的空间，用于显示背景图像*/
+}
+#menu li a:hover {
+	background:#f7941d url(imagesmenu_h.jpg) repeat-x top;
+}
+</style>
+</head>
+<body>
+<div id="menu">
+			<ul>
+				<li><a href="#">公司首页</a></li>
+				<li><a href="#">合作案例</a></li>
+				<li><a href="#">新闻中心</a></li>
+				<li><a href="#">人才招聘</a></li>
+				<li><a href="#">关于我们</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

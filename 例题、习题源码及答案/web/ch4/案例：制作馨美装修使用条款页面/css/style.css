@@ -1,0 +1,20 @@
+body{font-size:12px;color:#333;}
+img,a{border:0; text-decoration:none;}
+a{color:#333;}
+a:hover{color:#F00;}
+
+/*main*/
+.main{width:980px;margin:0 auto;}
+
+
+/*positions*/
+.positions{height:55px;line-height:55px;padding-left:25px; background:url(../images/home2.png) 5px center no-repeat;}
+.positions a{color:#333;}
+.positions a:hover,.positions .posCur{color:#F00;}
+
+/*cont*/
+.cont{ padding:0 10px; position:relative;padding-top:10px;}
+.contRight{width:760px;float:right;border:#efefef 1px solid;}
+.oredrName{font-family:"微软雅黑";}
+.helpPar{color:#666;line-height:22px;}
+

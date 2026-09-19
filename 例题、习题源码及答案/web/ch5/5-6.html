@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>background-origin属性</title>
+		<style type="text/css">
+			div {
+				text-align: center;
+				border: 10px dashed #09f;
+				background: url(images/flower.png) no-repeat;
+				padding: 20px;
+				margin: 20px;
+				width: 200px;
+				height: 100px;
+			}
+			.borderBox {
+				background-origin: border-box
+			}
+			.paddingBox {
+				background-origin: padding-box
+			}
+			.contentBox {
+				background-origin: content-box
+			}
+		</style>
+	</head>
+	<body>
+		<h3>CSS3自定义背景图片起点</h3>
+		<div class="borderBox">background-origin属性规定背景图片起点，包含border</div>
+		<div class="paddingBox">
+			background-origin属性规定背景图片起点，包含padding
+		</div>
+		<div class="contentBox">
+			background-origin属性规定背景图片起点，包含content
+		</div>
+	</body>
+</html>

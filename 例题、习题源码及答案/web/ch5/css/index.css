@@ -1,0 +1,11 @@
+.left-bottom{ width: 834px; margin-top: 18px; border: 1px solid rgb(223,220,221); }
+.left-bottom_head{ background: url(../images/left-bottom_hbg.jpg); width: 834px; height: 49px; }
+.tongzhigonggao{ float: left; width: 700px; }
+.tongzhigonggao p{ text-align: center; margin-left: 70px; padding-top: 10px; font-size: 18px;
+	line-height: 26px; color: #FFFFFF; }
+.more1{ padding: 14px 31px 0 0; }
+.more1 a{ font-size: 12px; color: #FFFFFF; }
+.left-bottom ul li{ list-style: url(../images/list-style.png); padding-left: 10px; }
+.left-bottom ul{ margin:20px 0 20px 35px; }
+.left-bottom ul li a{ 	color: #454545; font-size: 14px; line-height: 34px; }
+.left-bottom ul li a span{ padding-right: 26px; }

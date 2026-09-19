@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>相对定位</title>
+		<style type="text/css">
+			body { margin: 20px; /*页面整体外边距为20px*/ }
+			#father { background-color: #a0c8ff; /*父容器的背景为蓝色*/
+				border: 1px dashed #000000; /*父容器的边框为1px黑色实线*/
+				padding: 10px; /*父容器内边距为10px*/ }
+			#box1 { background-color: #fff0ac; /*盒子背景为黄色*/
+				border: 1px dashed #000000; /*边框为1px黑色实线*/
+				padding: 10px; /*盒子的内边距为10px*/
+				margin: 10px; /*盒子的外边距为10px*/
+				position: relative; /*relative相对定位*/
+				left: 30px; /*距离父容器左端30px*/
+				top: 30px; /*距离父容器顶端30px*/  }
+			h2.right_top { position: relative; /*relative相对定位*/
+				top: -75px; left: 100px; }
+		</style>
+	</head>
+	<body>
+		<h2>这是一个没有定位的标题</h2>
+		<h2 class="right_top">这个标题是根据其正常位置向右向上移动</h2>
+		<div id="father">
+			<div id="box1">盒子1</div>
+		</div>
+	</body>
+</html>

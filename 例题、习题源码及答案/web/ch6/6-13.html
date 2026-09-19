@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>visibility属性示例</title>
+		<style type="text/css">
+			h1.hidden {
+				visibility: hidden;
+			}
+
+			h1.display {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>这是一个可见标题</h1>
+		<h1 class="hidden">这是一个隐藏标题</h1>
+		<p>注意, 本例中的visibility: hidden隐藏标题仍然占用空间。</p>
+		<h1 class="display">这个标题不被保留空间</h1>
+		<p>注意, 本例中的display: none不显示标题不占用空间。</p>		
+	</body>
+</html>

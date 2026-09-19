@@ -1,0 +1,161 @@
+body {					/*设置页面整体样式*/
+	margin: 0pt;
+	padding: 0pt;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;			/*设置文字大小为11px*/
+	color: rgb(102, 102, 102);			/*设置默认文字颜色为灰色*/
+}
+.wrap {					/*设置页面容器样式*/
+	margin: 0pt auto;	/*自动水平居中*/
+	background: url('../images/main_bg.gif') repeat-y center top; 	/*背景图像垂直重复顶端中央对齐*/
+	width: 762px;
+}
+img {				/*设置图片样式*/
+	border: 0px none;				/*图片无边框*/
+	margin: 0pt;
+	padding: 0pt;
+}
+.top {					/*设置页面顶部容器样式*/
+	background: url('../images/main_bg.gif') repeat-y center top;	/*背景图像垂直重复顶端中央对齐*/
+	height: 83px;
+	clear: both;
+	width: 702px;
+	padding-left: 30px;	/*容器左内边距30px*/
+	padding-right: 30px;/*容器右内边距30px*/
+}
+.topl {					/*设置页面顶部容器左端区域样式*/
+	background: url('../images/top_paint.gif') no-repeat left center;	/*背景图像无重复左端中央对齐*/
+	float: left;	/*向左浮动*/
+	width: 350px;
+	height: 83px;
+}
+.topl h1 {				/*设置左端区域h1标题样式*/
+	margin: 0px 40px;
+	padding: 25px 0pt 0pt;
+	background-color: rgb(255, 255, 255);
+	font-size: 26px;		/*设置文字大小为26px*/
+	font-weight: normal;	/*字体正常粗细*/
+}
+.topl h1 a {			/*设置左端区域h1标题超链接样式*/
+	color: #08519C;		/*文字颜色为青色*/
+	text-decoration: none;			/*链接无修饰*/
+}
+.shortnfo {			/*设置广告条及菜单容器样式*/
+	background: url('../images/header.jpg') no-repeat center top;	/*背景图像无重复顶端中央对齐*/
+	height: 225px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.shortnfo .menuitems {	/*设置广告条容器中菜单区域样式*/
+	padding: 12px 34px 30px 30px;
+	text-align: right;	/*文字右对齐*/
+}
+.shortnfo ul {		/*设置菜单区域中无序列表样式*/
+	margin: 0px;
+	list-style-type: none;		/*列表项无样式类型*/
+	list-style-image: none;
+	list-style-position: outside;
+}
+.shortnfo li {		/*列表项样式*/
+	padding: 0pt 9px;	/*上、右、下、左的内边距依次为0px,9px,0px,9px*/
+	display: inline;	/*内联元素*/
+}
+.shortnfo li a:link, .shortnfo li a:visited {	/*列表项正常链接和访问过链接样式*/
+	margin: 0px;
+	color:#08519C;	/*文字颜色为青色*/
+	text-decoration: none;
+}
+.shortnfo li a:hover {	/*列表项悬停链接样式*/
+	margin: 0px;
+	color: rgb(176, 0, 0);
+	text-decoration: underline;	/*加下划线*/
+}
+.content {			/*设置主体内容容器样式*/
+	clear: both;	/*清除所有浮动*/
+	width: 762px;
+}
+.content .leftColumn {		/*设置主体内容左侧区域样式*/
+	margin: 0pt;
+	padding: 10px 8px 10px 25px;	/*上、右、下、左的内边距依次为10px,8px,10px,25px*/
+	float: left;	/*向左浮动*/
+	width: 225px;
+}
+.leftColumn h2, .leftColumn h2 a {	/*设置左侧区域h2标题及标题内链接的样式*/
+	font-size: 20px;
+}
+.leftColumn ul {				/*设置左侧区域无序列表样式*/
+	margin: 0pt;
+	padding: 0pt 0pt 5px;
+	font-size: 12px;
+	font-family: "宋体";
+	list-style-type: none;		/*列表项无样式类型*/
+}
+.leftColumn li {				/*设置列表项样式*/
+	margin: 7px 0px;
+	padding-left:30px;			/*左内边距30px*/
+}
+.leftColumn a:link, .leftColumn a:visited {		/*左侧区域正常链接和访问过链接样式*/
+	color: rgb(102, 102, 102);
+	font-weight: normal;	/*字体正常粗细*/
+	text-decoration: none;
+}
+.leftColumn a:hover {			/*左侧区域悬停链接样式*/
+	color: rgb(176, 0, 0);
+	font-weight: bold;			/*字体加粗*/
+	text-decoration: none;
+}
+.content .rightColumn {			/*设置主体内容左侧区域样式*/
+	padding: 15px 0px 10px 8px;
+	float: left;				/*向左浮动*/
+	width: 470px;
+}
+.rightColumn h2, .rightColumn h2 a {	/*设置右侧区域h2标题及标题内链接的样式*/
+	margin: 0pt;
+	padding: 0pt;
+	font-size: 18px;
+	color: rgb(85, 85, 85);		/*文字深灰色*/
+	letter-spacing: 0px;
+	font-weight: normal;	/*字体正常粗细*/
+	text-decoration: none;
+}
+.rightColumn h2 a:hover {	/*设置右侧区域h2标题悬停链接的样式*/
+	margin: 0pt;
+	padding: 0pt;
+	font-size: 18px;
+	color: rgb(180, 0, 0);	/*文字红色*/
+	letter-spacing: 0px;
+	font-weight: normal;	/*字体正常粗细*/
+	text-decoration: none;
+}
+.post {			/*设置右侧区域内容容器样式*/
+	margin: 0pt 0pt 20px;
+}
+.entry {		/*设置内容容器中不包含欢迎信息区域的样式*/
+	padding:5px;		/*内边距5px*/
+}
+.center p {			/*设置内容容器段落样式*/
+	margin: 5px 0px;
+	font-size:12px;
+	line-height:1.5;	/*设置行高是字符的1.5倍*/
+	text-indent:2em;	/*首行缩进*/
+}
+.post img {		/*设置内容容器中图片样式*/
+	margin-right:10px;	/*图片右外边距10px，以便和右侧的文字留有一定的空隙*/
+}
+.footer {		/*设置页面底部容器样式*/
+	width: 702px;
+	height: 40px;
+	margin-left:12px;
+	padding-top: 10px;
+	padding-left: 34px;
+	border-top:1px solid #999;		/*容器上边框为1px灰色实线*/
+	clear: both;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #08519C;
+}
+.footer p {		/*设置页面底部容器中段落的样式*/
+	text-align:center;		/*文字居中对齐*/
+	margin: 0pt;
+	padding: 0pt;
+}

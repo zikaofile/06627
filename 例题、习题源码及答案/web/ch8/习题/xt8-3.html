@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>当天的日期和星期</title>
+		<script language="JavaScript">
+			today = new Date();
+
+			function date() {
+				this.length = date.arguments.length
+				for (var i = 0; i < this.length; i++)
+					this[i + 1] = date.arguments[i];
+			}
+			var d = new date("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+			document.write("今天是", today.getFullYear(), "年",
+				today.getMonth() + 1, "月", today.getDate(), "日", d[today.getDay() + 1], "</font>");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

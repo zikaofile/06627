@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>getElementById获取HTML元素的值</title>
+	</head>
+	<body>
+		<p id="demo">连接字符串</p>
+		<input id="i1" type="text">
+		<input id="i2" type="text">
+		<script type="text/javascript">
+			function mm() {
+				var x = document.getElementById("i1").value;
+				var y = document.getElementById("i2").value;
+				x = x + y;
+				document.getElementById('demo').innerHTML = x;
+			}
+		</script>
+		<button onclick="mm()">连接字符串</button>
+	</body>
+</html>

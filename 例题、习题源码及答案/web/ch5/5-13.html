@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>图像边框示例</title>
+		<style type="text/css">
+			.test1 {
+				border-style: dotted; /*点画线边框*/
+				border-color: #fd8e47; /*边框颜色为桔红色*/
+				border-width: 4px; /*边框粗细为4px*/
+				margin: 5px;
+			}
+			.test2 {
+				border-style: dashed; /*虚线边框 */
+				border-color: blue; /*边框颜色为蓝色*/
+				border-width: 2px; /*边框粗细为2px*/
+				margin: 5px;
+			}
+			.test3 {
+				border-style: solid dotted dashed double; /*4边的线型依次为实线、点画线、虚线和双线边框*/
+				border-color: red green blue purple; /*4边的颜色依次为红色、绿色、蓝色和紫色*/
+				border-width: 1px 5px 10px 15px; /*4边的边框粗细依次为1px、5px、10px和15px*/
+				margin: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="images/home.jpg" class="test1">
+		<img src="images/home.jpg" class="test2">
+		<img src="images/home.jpg" class="test3">
+	</body>
+</html>
+

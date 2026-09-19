@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>display属性</title>
+		<style type="text/css">
+			p {
+				display: inline;
+			}
+			span
+			{
+				display:block;
+			}
+			span.inline_box{
+				border: red solid 1px;
+				display: inline-block;
+				width: 200px;
+				height: 50px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+
+		<p>display属性的值为"inline"的结果，</p>元素前后没有换行符，
+		<p>两个元素显示在同一水平线上。</p>
+		<span>display属性值为"block"的结果，</span>元素前后会有换行符，<span>可以设置它的宽度和上、右、下、左的内外的内外边距。</span>
+		<span class="inline_box">display属性值为"inline-block"的结果，</span>但具有block元素的某些特性，<span class="inline_box">两个元素显示在同一水平线上。</span>
+	</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>馨美装修工程复选框的全选效果</title>
+		<style type="text/css">
+			table {
+				margin: 0 auto;
+				width: 300px;
+				border-width: 0;
+			}
+
+			td {
+				text-align: center;
+			}
+
+			td img {
+				width: 200px;
+				height: 125px;
+			}
+
+			hr {
+				border: 1px #cccccc dashed;
+			}
+		</style>
+		<script language="javascript">
+			function checkAll(boolValue) {
+				var allCheckBoxs = document.getElementsByName("isBuy");
+				for (var i = 0; i < allCheckBoxs.length; i++) {
+					if (allCheckBoxs[i].type == "checkbox") //可能有重名的其他类型元素，如图片、控件等，所以要判断类型
+						allCheckBoxs[i].checked = boolValue; //检查是否选中用checked，而不是value
+				}
+			}
+
+			function change() {
+				var initmmAll = document.getElementsByName("mmall");
+				if (initmmAll[0].checked == true)
+					checkAll(true);
+				else
+					checkAll(false);
+			}
+		</script>
+	</head>
+	<body>
+		<h3 align="center">馨美装修工程选择</h3>
+		<form action="" name="buyForm" method="post">
+			<table>
+				<tr>
+					<td style="width:50px; text-align:right;"><input name="mmall" type="checkbox" onclick="change()" />
+					</td>
+					<td style="width:50px; text-align:left;">全选</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input name="isBuy" type="checkbox" id="isBuy" value="prod1" /></TD>
+					<td><img src="images/01.jpg" /></td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<hr noshade="noshade" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input name="isBuy" type="checkbox" id="isBuy" value="prod2" /></td>
+					<td><img src="images/02.jpg"></td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<hr noshade="noshade" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input name="isBuy" type="checkbox" id="isBuy" value="prod3" /></TD>
+					<td><img src="images/03.jpg"></td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<hr noshade="noshade" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

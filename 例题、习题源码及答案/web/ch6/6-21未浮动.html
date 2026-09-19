@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>馨美装修登录页面整体布局</title>
+	</head>
+	<style type="text/css">
+		body {
+			/*body容器的样式*/
+			margin: 0px;
+			/*外边距为0px*/
+			padding: 0px;
+			/*内边距为0px*/
+		}
+
+		div {
+			/*设置各div块的字体和颜色*/
+			font-size: 30px;
+			font-famliy: 宋体;
+		}
+
+		#wrapper {
+			/*整个页面容器wrapper的样式*/
+			width: 900px;
+			margin: 0px auto;
+			/*容器自动居中*/
+		}
+
+		#header {
+			/*顶部区域的样式*/
+			width: 100%;
+			/*宽度100%*/
+			height: 100px;
+			/*高度100%*/
+			background: #6ff;
+		}
+
+		#main {
+			/*主体内容区域的样式*/
+			width: 100%;
+			/*宽度100%*/
+			height: 200px;
+			/*高度200px*/
+			background: #f93;
+		}
+
+		.login_left {
+			/*登录表单区域的样式*/
+			width: 50%;
+			/*宽度占50%*/
+			height: 100%;
+			/*高度100%*/
+		}
+
+		.login_right {
+			/*表单说明区域的样式*/
+			width: 50%;
+			/*宽度占50%*/
+			height: 100%;
+			/*高度100%*/
+
+		}
+
+		#footer {
+			/*底部区域的样式*/
+			width: 100%;
+			/*宽度100%*/
+			height: 100px;
+			/*高度100%*/
+			background: #6ff;
+			text-align: center;
+		}
+	</style>
+	<body>
+		<div id="wrapper">
+			<div id="header">页面顶部(header)</div>
+			<div id="main">
+				<div class="login_left">登录(login_left)</div>
+				<div class="login_right">登录说明(login_right)</div>
+			</div>
+			<div id="footer">页面底部(footer)</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>使用函数</title>
+		<script language="javascript">
+			function hello() // 声明没有参数的函数
+			{
+				document.write("Hello,");
+			} // 本函数没有返回值
+			function message(message) // 声明有一个参数的函数
+			{
+				document.write(message);
+			} // 本函数没有返回值
+			function multiple(number1,number2) {
+			  var result = number1 * number2;
+			  return result;     // 本函数有返回值
+			}
+		</script>
+	</head>
+	<body>
+		<script language="javascript">
+			hello(); // 调用无参数的函数，本函数没有返回值
+			message("JavaScript"); // 调用有参数的函数，本函数没有返回值
+			document.write("<br>");
+			var result = multiple(20,30);      // 调用有参数和返回值的函数
+			document.write(result);
+		</script>
+	</body>
+</html>

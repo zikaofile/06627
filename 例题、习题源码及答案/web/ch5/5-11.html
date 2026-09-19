@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>设置表格属性</title>
+		<style type="text/css">
+			table.one { border-collapse: separate; /*表格边框独立*/
+				border-spacing: 10px; /*单元格水平、垂直距离均为10px*/ }
+			table.two { border-collapse: separate; /*表格边框独立*/
+				border-spacing: 10px 20px; /*单元格水平距离10px、垂直距离30px*/
+				empty-cells: hide; /*表格的单元格无内容时隐藏单元格的边框*/ }
+		</style>
+	</head>
+	<body>
+		<table border="1" style="caption-side: bottom;">
+			<caption>每餐饮料</caption>
+			<tr>
+				<th>早餐</th><th>午餐</th><th>晚餐</th>
+			</tr>
+			<tr>
+				<td>可可</td><td>咖啡</td><td>茶</td>
+			</tr>
+		</table>
+		<hr />
+		<table border="1" style="border-collapse: collapse;border-spacing: 10px 20px;">
+			<tr>
+				<th>早餐</th><th>午餐</th><th>晚餐</th>
+			</tr>
+			<tr>
+				<td>可可</td><td>咖啡</td><td>茶</td>
+			</tr>
+		</table>
+		<hr />
+		<table class="one" border="1">
+			<tr>
+				<th>早餐</th><th>午餐</th><th>晚餐</th>
+			</tr>
+			<tr>
+				<td>可可</td><td>咖啡</td><td>茶</td>
+			</tr>
+		</table>
+		<br />
+		<table class="two" border="1">
+			<tr>
+				<th>早餐</th><th>午餐</th><th></th>
+			</tr>
+			<tr>
+				<td>可可</td><td></td><td>茶</td>
+			</tr>
+		</table>
+	</body>
+</html>

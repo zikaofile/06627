@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>if and switch示例</title>
+	</head>
+	<body>
+		<script language="JavaScript">
+			var year = prompt("请输入年份:");
+			var m = prompt("请输入月份:");
+			var d;
+			var flag;
+			if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+				flag = true;
+				document.write(year + "年是闰年");
+			} else {
+				flag = false;
+				document.write(year + "年不是闰年");
+			}
+			document.write("<br>");
+			switch (m) {
+				case "1":
+				case "3":
+				case "5":
+				case "7":
+				case "8":
+				case "10":
+				case "12":
+					d = 31;
+					break;
+				case "4":
+				case "6":
+				case "9":
+				case "11":
+					d = 30;
+					break;
+				case "2":
+					if (flag) {		//如果是闰年
+						d = 29;
+					} else {
+						d = 28;
+					}
+					break;
+			}
+			document.write(m + "月有" + d + "天");
+		</script>
+	</body>
+</html>

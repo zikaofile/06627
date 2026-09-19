@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    <title>绘制圆饼图</title>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="300" height="200" style="border:1px solid #c3c3c3;">
+    您的浏览器不支持canvas元素.
+    </canvas>
+    <script type="text/javascript">
+      var c=document.getElementById("myCanvas");
+      var cxt=c.getContext("2d");
+		var color = ["#27255F","#77D1F6","#2F368F","#3666B0","#2CA8E0"];  
+		var data = [15,30,15,20,20];  
+     		//调用函数
+		drawCircle(); 
+		//函数的声明
+		function drawCircle(){  
+			var startPoint = 1.5 * Math.PI;  
+			for(var i=0;i<data.length;i++){  
+				cxt.fillStyle = color[i];  
+				cxt.strokeStyle = color[i];  
+				//开始创建路径
+				cxt.beginPath();
+				//开始创建路径
+				cxt.moveTo(150,100); 
+				//开始创建路径 
+				cxt.arc(150,100,90,startPoint,startPoint-Math.PI*2*(data[i]/100),true);  
+				cxt.fill();  
+				cxt.stroke();  
+				startPoint -= Math.PI*2*(data[i]/100);  
+			}  
+		}     
+    </script>
+  </body>
+</html>

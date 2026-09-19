@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>圆角边框</title>
+		<style type="text/css">
+			#radius{
+				width:200px;			/*栏目容器宽度为200px*/
+				height:200px;			/*栏目容器高度为150px*/
+				border-width: 3px;		/*边框宽度为3px*/
+				border-color:#fd8e47;		/*边框颜色为桔红色*/
+				border-style: solid;		/*实线边框*/
+				border-radius: 11px 11px 11px 11px; /*圆角半径为11px*/
+				padding:20px; 			/*内边距为20px*/
+				margin: 5px;			/*外边距为5px*/
+				float: left;
+			}
+			#corner1 { background: #32CD99; background: url(images/home.jpg);
+				background-position: left top; background-repeat: repeat; padding: 20px;
+				width: 300px; height: 187px; 
+				border-radius: 10em 3em/3em 10em;
+				float: left; }
+		</style>
+	</head>
+	<body>
+		<p id="radius">指定相同的4个圆角</p>
+		<p id="corner1">指定背景图片的圆角</p>
+	</body>
+</html>
+

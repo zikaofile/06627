@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html>
+<head>
+<title>用自定义函数生成表格</title>
+<script type="text/javascript">
+function table(row,col){
+	var show = "";//声明变量并初始化
+	show = "<table align='center' border='1' width='600'>";	//定义要输出的字符串
+	var bgcolor;//声明变量
+	for(i=1;i<=row;i++){				//外层循环，输出表格的行
+		if(i%2 != 0){
+			bgcolor = "#FFFFFF";//如果是奇数行将行背景定义为白色
+		}else{
+			bgcolor = "#DDDDFF";//如果是偶数行将行背景定义为浅蓝色
+		}
+		show += "<tr bgcolor='"+bgcolor+"'>";				//连接字符串
+		for(j=1;j<=col;j++){			//内层循环，输出表格的列
+			show += "<td height='30'>第"+i+"行第"+j+"列</td>";				//定义要输出的表格文字
+		}
+		show += "</tr>";				//连接字符串
+	}
+	show += "</table>";					//连接字符串
+	return show;//返回变量的值
+}
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+var result = table(3,4);//调用函数并传递参数
+document.write(result);//输出函数的返回值
+</script>
+</body>
+</html>
+

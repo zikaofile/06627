@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>使用CSS美化常用的表单元素</title>
+		<style type="text/css">
+			form {
+				border: 1px dashed #00008B;
+				padding: 1px 6px 1px 6px;
+				margin: 0px;
+				font: 14px Arial;
+			}
+			input {
+				/* 所有input标记 */
+				color: #00008B;
+			}
+			input.txt {
+				/* 文本框单独设置 */
+				border: 1px solid #00008B;
+				padding: 2px 0px 2px 16px;
+				background: url(images/username_bg.jpg) no-repeat left center;
+			}
+			input.btn {
+				/* 按钮单独设置 */
+				color: #00008B;
+				background-color: #ADD8E6;
+				border: 1px solid #00008B;
+				padding: 1px 2px 1px 2px;
+			}
+			select {
+				width: 120px;
+				color: #00008B;
+				border: 1px solid #00008B;
+			}
+			textarea {
+				width: 300px;
+				height: 60px;
+				color: #00008B;
+				border: 4px double #00008B;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 align="center">馨美装修用户调查</h1>
+		<form method="post">
+			<p>姓名:<br><input type="text" name="name" id="name" class="txt"></p>
+			<p>性别:<br>
+				<input type="radio" name="sex" id="male" value="male">男
+				<input type="radio" name="sex" id="female" value="female">女</p>
+			<p>你最喜欢的装修风格:<br>
+				<select name="style" id="style">
+					<option value="1">国风风格</option>
+					<option value="2">简约风格</option>
+					<option value="3">欧式风格</option>
+					<option value="4">田园风格</option>
+				</select>
+			</p>
+			<p>你认为提升服务质量的好方法是:<br>
+				<input type="checkbox" name="service" id="s1" value="s1">产品体验
+				<input type="checkbox" name="service" id="s2" value="s2">现场讲座
+				<input type="checkbox" name="service" id="s3" value="s3">社区交流</p>
+			<p>留言:<br><textarea name="comments" id="comments"></textarea></p>
+			<p><input type="submit" name="btnSubmit" class="btn" value="提交"></p>
+		</form>
+	</body>
+</html>

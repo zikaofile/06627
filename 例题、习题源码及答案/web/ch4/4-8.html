@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>相邻兄弟选择符示例</title>
+		<style type="text/css">
+			h3+p {color: red;}
+			p+p+p {color: blue;}
+			li+li {	background-color: aqua;}
+		</style>
+	</head>
+	<body>
+		<p>第零个段落</p>
+		<p>第一个段落</p>
+		<h3>标题3</h3>
+		<p>第二个段落</p><!--p相邻h3，p为红色-->
+		<p>第三个段落</p>
+		<p>第四个段落</p><!--连续第3个p为相邻-->
+		<p>第五个段落</p><!--也是连续的第3个p相邻-->
+		<div>
+			<ul>
+				<li>客厅</li>
+				<li>餐厅</li><!--第二个<li>标签会选中，因为它是第一个<li>标签紧邻的<li>标签-->
+				<li>厨房</li><!--第三个<li>标签也会选中：因为第三个<li>标签的上一个标签也是<li> 标签，也满足css选择器li+li{}的条件-->
+			</ul>
+			<ol>
+				<li>卧室</li>
+				<li>书房</li>
+				<LI>阳台</LI>
+			</ol>
+		</div>
+	</body>
+</html>

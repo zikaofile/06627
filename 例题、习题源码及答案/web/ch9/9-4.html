@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>检查表单</title>
+		<script language="JavaScript">
+			function check() {
+				var va1 = document.chform.textname.value; // 表单名.文本框名.value
+				if (1<va1 && va1<9)
+					alert("输入值" + va1 + "在允许的范围内!");
+				else {
+					alert("输入值" + va1 + "超出了允许的范围!");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form name="chform" method="post" onSubmit="check()">
+			<p>输入一个1到9之间的数字(1,9除外)：
+				<input type="text" name="textname" value=" " size="10">
+			</p>
+			<input type="submit">
+		</form>
+	</body>
+</html>

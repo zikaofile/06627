@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>设置图像的尺寸</title>
+		<style type="text/css">
+			#box {
+				padding: 10px;
+				width: 750px;
+				height: 250px;
+				border: 2px dashed #fd8e47;
+			}
+			img.test1 {
+				width: 30%;
+				/* 相对宽度为30% */
+				height: 40%;
+				/* 相对高度为40% */
+			}
+			img.test2 {
+				width: 100px;
+				/* 绝对宽度为100px */
+				height: 150px;
+				/* 绝对高度为150px */
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<img src="images/home.jpg">
+			<!--图片的原始大小-->
+			<img src="images/home.jpg" class="test1">
+			<!--相对于父元素缩放的大小-->
+			<img src="images/home.jpg" class="test2">
+			<!--绝对像素缩放的大小-->
+		</div>
+	</body>
+</html>

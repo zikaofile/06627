@@ -1,0 +1,12 @@
+  body {font-size:11pt}
+  div{width:500px; border:1px dashed #00f;}
+  /*修改标题1的样式*/
+  h1 {font-size:30pt;color:purple;text-align:center}
+  h1.title {font-size:13pt;color:blue;text-align:center}
+  p {font-size:11pt;color:black} /*定义段落文字11pt；黑色*/
+  p.author{color:blue;text-align:right}
+  p.img{text-align:center}
+  p.content{color:blue}
+  p.note{color:green;text-align:left}
+
+  

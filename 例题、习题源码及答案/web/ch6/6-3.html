@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>外边距</title>
+		<style type="text/css">
+			div {
+				width: 342px;	/*容器内容宽度342px=图像左外边距+图像的左边框宽度+图像的宽度+图像的右边框宽度+图像右外边距*/
+				border: 2px solid red;	/*容器边框为2px红色实线*/
+			}
+			img {
+				width: 300px;			/*图像宽度为300px*/
+				height: 187px;
+				border: 1px solid blue;		/*图像边框宽度为1px*/
+				margin: 10px 20px;	/*图像上、下外边距为10px，左、右外边距为20px*/
+			}
+			p {
+				margin:30px 10px;			/*段落的上、下外边距为30px，左、右外边距为10px*/
+				border:2px dashed #09f;	/*段落边框为2px蓝色虚线*/
+			}
+		</style>
+	</head>
+	<body>
+		<div><img src="images/home.jpg" /></div>
+		<p>简约装修风格</p>
+	</body>
+</html>

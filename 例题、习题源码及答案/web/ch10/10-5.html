@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    <title>绘制文字</title>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+    您的浏览器不支持canvas元素.
+    </canvas>
+    <script type="text/javascript">
+      var c=document.getElementById("myCanvas");
+      var cxt=c.getContext("2d");
+      cxt.fillStyle="#0000ff";      
+      cxt.font = '26pt 黑体';
+      cxt.fillText('馨美装修', 10, 30);     //绘制填充文字
+      cxt.strokeStyle="#00ff00";
+      cxt.shadowOffsetX = 5;                        //设置阴影向右偏移5像素
+      cxt.shadowOffsetY = 5;                        //设置阴影向下偏移5像素
+      cxt.shadowBlur = 10;                          //设置阴影模糊范围
+      cxt.shadowColor = 'black';                    //设置阴影的颜色
+      cxt.lineWidth="1";  
+      cxt.font = '40pt 黑体';
+      cxt.strokeText('天然', 40, 80);              //绘制轮廓文字
+    </script>
+  </body>
+</html>

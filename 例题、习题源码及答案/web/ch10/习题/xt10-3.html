@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>绘制图形组合</title>
+<script>
+function draw(id) 
+{ 
+ var canvas=document.getElementById(id);
+   if(canvas==null)
+  return false; 
+   var context=canvas.getContext('2d'); 
+   var oprtns=new Array( 
+        "source-atop", 
+         "source-in", 
+        "source-out",
+       "source-over", 
+        "destination-atop", 
+       "destination-in", 
+        "destination-out", 
+        "destination-over",  
+         "lighter",
+        "copy", 
+        "xor" 
+     );  
+    var i=10;
+     context.fillStyle="blue"; 
+    context.fillRect(10,10,200,200);
+     context.globalCompositeOperation=oprtns[i];
+    context.beginPath(); 
+   context.fillStyle="red";  
+    context.arc(110,110,40,0,Math.PI*2,false); 
+    context.fill();  
+} 
+</script>
+</head>
+<body onload="draw('canvas');">  
+<h1>正方形和圆的组合</h1>  
+<canvas id="canvas" width="400" height="300" />  
+</body>  
+</html>
+
+
+

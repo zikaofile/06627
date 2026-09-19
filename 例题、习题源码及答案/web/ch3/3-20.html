@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>员工信息调查</title>
+	</head>
+	<body>
+		<h2>员工信息调查</h2>
+		<form>
+			<p>
+				职业：<select size="3" name="work">
+					<option value="政府职员">政府职员</option>
+					<option value="工程师" selected>工程师</option>
+					<option value="工人">工人</option>
+					<option value="教师" selected>教师</option>
+					<option value="医生">医生</option>
+					<option value="学生">学生</option>
+				</select>
+			</p>
+			<p>
+				收入：<select name="salary">
+					<optgroup label="低收入">
+						<option value="2000元以下">2000元以下</option>
+						<option value="2000-3000元">2000-3000元</option>
+					</optgroup>
+					<optgroup label="中等收入">
+						<option value="3000-5000元">3000-5000元</option>
+						<option value="5000-10000元" selected>5000-10000元</option>
+					</optgroup>
+					<optgroup label="高收入">
+						<option value="10000元以上">10000元以上</option>
+					</optgroup>	
+				</select>
+			</p>
+		</form>
+	</body>
+</html>

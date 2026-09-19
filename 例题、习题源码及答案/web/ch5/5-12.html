@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>斑马线表格</title>
+		<style type="text/css">
+			table {
+				border: 1px solid #000000;
+				font: 12px/1.5em "宋体";
+				border-collapse: collapse;
+				/*合并单元格边框*/
+			}
+			caption {
+				text-align: center;
+			}
+			/*设置标题信息居中显示 */
+			th {
+				color: #F4F4F4;
+				border: 1px solid #000000;
+				background: #328aa4;
+			}
+			/*设置表头的样式（表头文字颜色、边框、背景色）*/
+			td {
+				text-align: center;
+				border: 1px solid #000000;
+				background: #e5f1f4;
+			}
+			/*设置所有td内容单元格的文字居中显示，并添加黑色边框和背景颜色*/
+			.tr_bg td {
+				background: #FDFBCC;
+			}
+			/*通过tr标签的类名修改相对应的单元格背景颜色 */
+		</style>
+	</head>
+	<body>
+		<table width="400" border="0">
+			<caption>装修工程年度排行榜</caption>
+			<tr><th>工程编号</th><th>装修风格</th><th>报价</th><th>数量</th></tr>
+			<tr><td>001</td><td>国风装修</td><td>360000</td><td>8</td></tr>
+			<tr class="tr_bg"><td>002</td><td>简约装修</td><td>330000</td><td>7</td></tr>
+			<tr><td>003</td><td>欧式装修</td><td>390000</td><td>6</td></tr>
+			<tr class="tr_bg"><td>004</td><td>田园装修</td><td>380000</td><td>5</td></tr>
+		</table>
+	</body>
+</html>
